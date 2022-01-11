@@ -50,4 +50,4 @@ calc <- function(data,x,itr){
   return(list(r=x,fcn_val=f,iterations=i,alpha=alpha))
 }
 
-calc(data,__,10000) ## enter initial value for x (the parameter). 
+calc(data,x,10000) ## enter initial value for x (the parameter). 
