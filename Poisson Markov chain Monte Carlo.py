@@ -2,6 +2,7 @@ import numpy
 import math
 import random
 import statistics
+import matplotlib.pyplot as plt
 
 data = (10,8,6,7,5,6,5,7,4,3,5,2,5,11,6,7,8,9,3,4,5,6)
 
@@ -59,4 +60,13 @@ def generate_samples():
 
     return(samplelist)
 
-print("MCMC mu is",statistics.mean(generate_samples()[50000:1000000]))
+run = generate_samples()
+run2 = generate_samples()
+
+print("MCMC mu is",statistics.mean(run[50000:1000000])) 
+
+x = list(range(500))
+plt.plot(x,run[999500:1000000],color='red')
+plt.plot(x,run2[999500:1000000],color='blue')
+plt.title('Last 500 samples, 2 runs')
+plt.show()
