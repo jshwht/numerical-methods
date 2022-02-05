@@ -1,7 +1,7 @@
 ## Gradient descent for estimation of negative binomial
 ## parameter 'r' given analytical MLE for 'p' 
 
-data <- c() 
+data <- c(1,2,2,3,6,7,3,3,5,0,4,4,1,2,4,6,8,0,3,2)
 
 fcn_val <- function(x){
   fcn_list <- c()
