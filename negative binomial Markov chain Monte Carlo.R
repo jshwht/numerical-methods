@@ -1,7 +1,7 @@
 ## Gibbs sampler with Metropolis-Hastings steps to sample 
 ## from conditionals 
 
-data <- c() ## data represents the number of failures given r successes
+data <- c(1,2,2,3,6,7,3,3,5,0,4,4,1,2,4,6,8,0,3,2) ## data represents the number of failures given r successes
 
 r_vec <- c()
 p_vec <- c()
